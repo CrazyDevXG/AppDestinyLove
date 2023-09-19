@@ -1,11 +1,25 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Avatar02 from '@/public/assets/images/avatars/avatar-2.jpg'
-import PlanUpgrade from './plan_upgrade'
+import { UserStyle } from '@/components/UserPage/Global_Css'
+import USidebar from "@/components/UserPage/sidebar"  
 
 export default function Matching() {
+
+    const router = useRouter();
+    
+    useEffect(() => {
+      const isAuthenticated = true;
+  
+      if (!isAuthenticated) {
+        router.push('./sign_in');
+      }
+  
+    }, []);
+
 
   
     return (
@@ -18,6 +32,10 @@ export default function Matching() {
                   <link rel="icon" href="/favicon.ico" />
                   <link rel="shortcut icon" href="assets/images/x-icon.png" type="image/x-icon"/>                
               </Head>
+
+        <UserStyle />
+            
+        <USidebar />
 
         <main className="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">
             <div className="max-w-3xl p-6 mx-auto">                

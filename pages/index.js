@@ -7,7 +7,7 @@ export default function CheckIndex() {
   const router = useRouter();
 
   useEffect(() => {
-    const isAuthenticated = true;
+    const isAuthenticated = false;
 
     if (!isAuthenticated) {
       router.push('./main/');

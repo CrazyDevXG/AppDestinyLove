@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import { UserStyle } from '@/components/UserPage/Global_Css'
+import USidebar from "@/components/UserPage/sidebar"
 
 import Avatar06 from '@/public/assets/images/avatars/avatar-6.jpg'
 import AvatarLG6 from '@/public/assets/images/avatars/avatar-lg-6.jpg'
@@ -9,6 +13,17 @@ import Reel from '@/public/assets/images/reels/reels-1.jpg'
 
 
 export default function My_Profile() {
+
+    const router = useRouter();
+    
+    useEffect(() => {
+      const isAuthenticated = true;
+  
+      if (!isAuthenticated) {
+        router.push('./sign_in');
+      }
+  
+    }, []);
 
   
     return (
@@ -21,6 +36,10 @@ export default function My_Profile() {
                   <link rel="icon" href="/favicon.ico" />
                   <link rel="shortcut icon" href="assets/images/x-icon.png" type="image/x-icon"/>                
               </Head>
+
+            <UserStyle />
+            
+            <USidebar />
 
 
               <main className="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">

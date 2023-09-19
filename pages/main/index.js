@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
-import Script from 'next/script'
+
 import { FaUsers } from 'react-icons/fa'
 import { useEffect } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.css'
-import LandingStyle from '@/components/LandingPage/CSS_Landing'
-import Navbar from "@/components/LandingPage/nav_bar"        
+import LandingStyle from '@/components/LandingPage/global_css'
+import Navbar from "@/components/LandingPage/nav_bar"
+import AppDownload from '@/components/LandingPage/app_download'        
 import Footer from "@/components/LandingPage/footer" 
 
 
@@ -55,7 +56,7 @@ export default function Home() {
                                           <h3>Make a Destiny Love</h3>
                                           <p>Serious Dating or Enjoy With Your Perfect
                                               Match is Just a Click Away.</p>
-                                          <form action="/" className="banner-form">
+                                          <form action="/main/register" className="banner-form">
                                               <div className="gender">
                                                   <label for="gender" className="left">I am a </label>
                                                   <div className="custom-select right">
@@ -246,14 +247,10 @@ export default function Home() {
             </div>
         </div>
     </section>
-    <Footer />
 
-                <Script src="./landing/js/functions.js" strategy="beforeInteractive" />
-                <Script src="./landing/js/isotope.pkgd.min.js" strategy="beforeInteractive" />
-                <Script src="./landing/js/jquery.js" strategy="beforeInteractive" />
-                <Script src="./landing/js/swiper.min.js" strategy="beforeInteractive" />
-                <Script src="./landing/js/wow.min.js" strategy="beforeInteractive" />    
-                <Script src="./landing/js/waypoints.min.js" strategy="beforeInteractive" />
+    <AppDownload />
+
+    <Footer />
 
     </>
   )

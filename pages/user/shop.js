@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { UserStyle } from '@/components/UserPage/Global_Css'
+import USidebar from "@/components/UserPage/sidebar"  
 
 
 export default function GiftShop() {
@@ -17,7 +18,9 @@ export default function GiftShop() {
                   <link rel="shortcut icon" href="assets/images/x-icon.png" type="image/x-icon"/>                
               </Head>
 
-
+              <UserStyle />
+            
+            <USidebar />
 
 
         <main className="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">

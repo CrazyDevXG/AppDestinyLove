@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { UserStyle } from '@/components/UserPage/Global_Css'
+import USidebar from "@/components/UserPage/sidebar"  
 import Avatar02 from '@/public/assets/images/avatars/avatar-2.jpg'
 import Reel1 from '@/public/assets/images/reels/reels-1.jpg'
 import IconPlay from '@/public/assets/images/icon-play.svg'
@@ -19,6 +20,10 @@ export default function Popular() {
                   <link rel="shortcut icon" href="assets/images/x-icon.png" type="image/x-icon"/>                
               </Head>
 
+              <UserStyle />
+            
+            <USidebar />
+
                 <main className="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">
                         <div className="main__inner pt-6">   
                             <div className="page__heading">
@@ -33,16 +38,13 @@ export default function Popular() {
 
                                     <ul className="-ml-2 uk-slider-items w-[calc(100%+0.10px)] capitalize text-sm font-semibold">
                                         <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Top </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> headphones </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Parfums </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Fruits </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Gaming </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Mobiles </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Laptops </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Gaming </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> headphones </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Parfums </Link> </li>
-                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Fruits </Link> </li>
+                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Man </Link> </li>
+                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Woman </Link> </li>
+                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Dating </Link> </li>
+                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> One Nigth </Link> </li>
+                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Friendship </Link> </li>
+                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Private Talk </Link> </li>
+                                        <li className="w-auto pr-2.5"> <Link href="#" className="px-4 py-2 rounded-lg bg-white border inline-block hover:shadow dark:bg-dark2 dark:border-slate-700"> Other </Link> </li>
                                     </ul>
                                 
                                 </div>
@@ -60,7 +62,7 @@ export default function Popular() {
                                     
                                         <ul className="-ml-2 uk-slider-items w-[calc(100%+0.875rem)]" uk-scrollspy="target: > li; cls: uk-animation-slide-right-small; delay: 50">
                                             <li className="lg:w-1/4 md:w-1/2 w-1/2 pr-3.5" uk-scrollspy-className="uk-animation-fade">   
-                                                <Link href="reels-view.html">
+                                                <Link href="">
                                                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">                                                        
                                                         <Image className="object-cover w-full h-full" src={Reel1} alt=""/>                                                        
                                                         <Image src={IconPlay} alt="" className="w-12 h-12 absolute z-10 top-1/2 left-1/2 !-translate-x-1/2 !-translate-y-1/2 uk-transition-fade"/>
@@ -85,7 +87,7 @@ export default function Popular() {
                                             <li className="lg:w-1/4 md:w-1/2 w-1/2 pr-3.5">
                                                 
                                                 
-                                                <Link href="reels-view.html">
+                                                <Link href="">
                                                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">                                                        
                                                     <Image className="object-cover w-full h-full" src={Reel1} alt=""/>                                                        
                                                         <Image src={IconPlay} alt="" className="w-12 h-12 absolute z-10 top-1/2 left-1/2 !-translate-x-1/2 !-translate-y-1/2 uk-transition-fade"/>
@@ -110,7 +112,7 @@ export default function Popular() {
                                             <li className="lg:w-1/4 md:w-1/2 w-1/2 pr-3.5">
                                                 
                                                 
-                                                <Link href="reels-view.html">
+                                                <Link href="">
                                                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                                         
                                                         <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -137,7 +139,7 @@ export default function Popular() {
                                             <li className="lg:w-1/4 md:w-1/2 w-1/2 pr-3.5">
                                                 
                                                 
-                                                <Link href="reels-view.html">
+                                                <Link href="">
                                                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                                         
                                                         <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -162,7 +164,7 @@ export default function Popular() {
 
                                             </li>
                                             <li className="lg:w-1/4 md:w-1/2 w-1/2 pr-3.5" uk-scrollspy-className="uk-animation-fade">   
-                                                <Link href="reels-view.html">
+                                                <Link href="">
                                                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">                                                        
                                                         <Image className="object-cover w-full h-full" src={Reel1} alt=""/>                                                        
                                                         <Image src={IconPlay} alt="" className="w-12 h-12 absolute z-10 top-1/2 left-1/2 !-translate-x-1/2 !-translate-y-1/2 uk-transition-fade"/>
@@ -186,7 +188,7 @@ export default function Popular() {
                                             <li className="lg:w-1/4 md:w-1/2 w-1/2 pr-3.5">
                                                 
                                                 
-                                                <Link href="reels-view.html">
+                                                <Link href="">
                                                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">                                                        
                                                         <Image className="object-cover w-full h-full" src={Reel1} alt=""/>                                                        
                                                         <Image src={IconPlay} alt="" className="w-12 h-12 absolute z-10 top-1/2 left-1/2 !-translate-x-1/2 !-translate-y-1/2 uk-transition-fade"/>
@@ -241,7 +243,7 @@ export default function Popular() {
 
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -266,7 +268,7 @@ export default function Popular() {
                                     </Link>
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -291,7 +293,7 @@ export default function Popular() {
                                     </Link>
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -316,7 +318,7 @@ export default function Popular() {
                                     </Link>
                                 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -341,7 +343,7 @@ export default function Popular() {
                                     </Link>
                                 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -365,7 +367,7 @@ export default function Popular() {
                                     </Link>
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -389,7 +391,7 @@ export default function Popular() {
                                     </Link>
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -413,7 +415,7 @@ export default function Popular() {
                                     </Link>
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -438,7 +440,7 @@ export default function Popular() {
 
                                     
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -463,7 +465,7 @@ export default function Popular() {
                                     </Link>
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -488,7 +490,7 @@ export default function Popular() {
                                     </Link>
 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>
@@ -513,7 +515,7 @@ export default function Popular() {
                                     </Link>
                                 
                                     
-                                    <Link href="reels-view.html">
+                                    <Link href="">
                                         <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0 uk-transition-toggle">
                                             
                                             <Image className="object-cover w-full h-full" src={Reel1} alt=""/>

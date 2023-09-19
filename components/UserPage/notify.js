@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import Avatar from '@/public/assets/images/avatars/avatar-2.jpg'
+
 export default function Notyfi() {
 
   
@@ -32,30 +32,10 @@ export default function Notyfi() {
                                         <h4 className="font-semibold">New</h4>
                                     </div>
 
-                                    <Link href="" className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
-                                        <div className="relative w-12 h-12 shrink-0"> <Image src={Avatar} alt="" className="object-cover w-full h-full rounded-full" /></div>
-                                        <div className="flex-1 ">
-                                            <p> <b className="font-bold mr-1"> User Name 1</b> who you might know,  is on Instello.</p>
-                                            <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 2 hours ago </div>
-                                        </div>
-                                        <button type="button" className="button text-white bg-primary">More</button>
-                                    </Link>
+                                   
 
-                                    <Link href="#" className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
-                                        <div className="relative w-12 h-12 shrink-0"> <Image src={Avatar} alt="" className="object-cover w-full h-full rounded-full" /></div>
-                                        <div className="flex-1 ">
-                                            <p> <b className="font-bold mr-1"> User Name 2</b> sarah tagged you <br /> in a photo of your birthday party. </p>
-                                            <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 8 hours ago </div>
-                                        </div>
-                                    </Link>
-                                    <Link href="#" className="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery bg-teal-500/5">
-                                        <div className="relative w-12 h-12 shrink-0"> <Image src={Avatar} alt="" className="object-cover w-full h-full rounded-full" /></div>
-                                        <div className="flex-1 ">
-                                            <p> <b className="font-bold mr-1"> User Name 3</b> sent you a message. He wants to chat with you. </p>
-                                            <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 4 hours ago </div>
-                                            <div className="w-2.5 h-2.5 bg-teal-600 rounded-full absolute right-3 top-5"></div>
-                                        </div>
-                                    </Link>
+                                   
+                                 
                                  
                                 </div>
 
