@@ -17,9 +17,6 @@ import img_google from '@/public/landing/images/banner/google.png'
 
 export default function Home() {
 
-    useEffect(() => {
-        import("bootstrap/dist/js/bootstrap");
-      }, []);
 
       return (
         <>    

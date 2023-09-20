@@ -19,17 +19,6 @@ import Avatar02 from '@/public/assets/images/avatars/avatar-2.jpg'
 
 export default function Home() {  
 
-    const router = useRouter();
-    const PathIMG = AvatarLG1
-    
-    useEffect(() => {
-      const isAuthenticated = true;
-  
-      if (!isAuthenticated) {
-        router.push('./sign_in');
-      }
-  
-    }, []);
     
 
 

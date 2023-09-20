@@ -12,16 +12,6 @@ import Product1 from '@/public/assets/images/product/product-1.jpg'
 
 export default function My_Messages() {
 
-    const router = useRouter();
-    
-    useEffect(() => {
-      const isAuthenticated = true;
-  
-      if (!isAuthenticated) {
-        router.push('./sign_in');
-      }
-  
-    }, []);
 
   
     return (

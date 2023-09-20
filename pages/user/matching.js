@@ -9,16 +9,7 @@ import USidebar from "@/components/UserPage/sidebar"
 
 export default function Matching() {
 
-    const router = useRouter();
-    
-    useEffect(() => {
-      const isAuthenticated = true;
-  
-      if (!isAuthenticated) {
-        router.push('./sign_in');
-      }
-  
-    }, []);
+
 
 
   

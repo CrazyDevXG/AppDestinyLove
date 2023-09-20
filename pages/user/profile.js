@@ -14,10 +14,7 @@ import { Co_Interests } from '@/components/UserPage/profile/Co_interests'
 
 export default function Profile() {  
 
-    useEffect(() => {        
-
-      }, []);
-      
+         
     
     return (
       <>
