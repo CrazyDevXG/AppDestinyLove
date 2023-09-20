@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import navURL from '@/components/Utility/navURL'
 import { UserStyle } from '@/components/UserPage/Global_Css'
 import  USidebar  from '@/components/UserPage/sidebar' 
-import { Co_Online } from '@/components/UserPage/home/Co_Online'
+import { Co_Online } from '@/components/UserPage/home/Co_online'
 import { Co_Suggest } from '@/components/UserPage/home/Co_suggest'
 
 
